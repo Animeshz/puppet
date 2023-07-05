@@ -14,7 +14,7 @@ end
 
 # Make sure these gem requirements are in sync with the gempspec and ext/project_data.yaml
 
-gem "facter", *location_for(ENV['FACTER_LOCATION'] || ["~> 4.3"])
+gem 'facter', git: 'https://github.com/puppetlabs/facter', ref: 'main'
 gem "semantic_puppet", *location_for(ENV['SEMANTIC_PUPPET_LOCATION'] || ["~> 1.0"])
 gem "puppet-resource_api", *location_for(ENV['RESOURCE_API_LOCATION'] || ["~> 1.5"])
 
